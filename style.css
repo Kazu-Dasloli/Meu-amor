@@ -1,0 +1,52 @@
+/* Configurações gerais da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffeef2; /* Fundo rosinha claro */
+    color: #333;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    color: #ff4d6d;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo das caixas (Contador e Playlist) */
+.contador-container, .playlist-container {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px; /* Evita que fique gigante no computador e caiba perfeito no celular */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Estilo específico do texto do contador */
+#contador {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4d6d;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.playlist-container h2 {
+    color: #ff4d6d;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.playlist-container p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
