@@ -13,28 +13,23 @@
     </header>
 
     <main>
-        <section class="contador-container">
-            <h2>Tempo Juntos:</h2>
-            <div id="contador">Carregando tempo...</div>
-        </section>
-
         <section class="playlist-container">
-            <h2>Nossa Playlist ❤️</h2>
-            <p>As músicas que embalam a nossa história:</p>
-            
-            <iframe 
-                style="border-radius:12px" 
-                src="https://open.spotify.com/playlist/1UkiDCeYsNazAJY5Z1CyTt?si=47bad0fd58ff432c" 
-                width="100%" 
-                height="352" 
-                frameBorder="0" 
-                allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy">
-            </iframe>
-        </section>
-    </main>
+    <h2>Nossa Playlist ❤️</h2>
+    <p>As músicas que embalam a nossa história:</p>
+    
+    <div style="display: none;">
+        <div id="player-youtube"></div>
+    </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <div class="player-controles">
+        <button onclick="musicaAnterior()" class="btn-player">⏮️</button>
+        <button onclick="playPause()" id="btn-play" class="btn-player">▶️ Tocar</button>
+        <button onclick="proximaMusica()" class="btn-player">⏭️</button>
+    </div>
+
+    <div id="nome-da-musica" style="margin-top: 15px; font-weight: bold; color: #ff4d6d; min-height: 24px;">
+        Carregando músicas...
+    </div>
+</section>
+
+<script src="https://www.youtube.com/iframe_api"></script>
